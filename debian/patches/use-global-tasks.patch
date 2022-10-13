@@ -1,0 +1,16 @@
+Description: Use global tasks
+Index: node-grunt-contrib-nodeunit/Gruntfile.js
+===================================================================
+--- node-grunt-contrib-nodeunit.orig/Gruntfile.js
++++ node-grunt-contrib-nodeunit/Gruntfile.js
+@@ -40,8 +40,8 @@ module.exports = function(grunt) {
+ 
+   // These plugins provide necessary tasks.
+  // grunt.loadNpmTasks('grunt-contrib-jshint');
+-  grunt.loadNpmTasks('grunt-contrib-clean');
+-  grunt.loadNpmTasks('grunt-contrib-internal');
++  grunt.loadNpmTasks('grunt-contrib-clean','/usr/lib/nodejs');
++  grunt.loadNpmTasks('grunt-contrib-internal','/usr/lib/nodejs');
+ 
+   // Whenever the "test" task is run, run some basic tests.
+   grunt.registerTask('test', function(which) {

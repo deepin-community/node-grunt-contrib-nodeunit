@@ -1,0 +1,27 @@
+Source: node-grunt-contrib-nodeunit
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Section: javascript
+Priority: optional
+Build-Depends:
+ debhelper-compat (= 13),
+ , dh-sequence-nodejs
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-grunt-contrib-nodeunit
+Vcs-Git: https://salsa.debian.org/js-team/node-grunt-contrib-nodeunit.git
+Homepage: https://github.com/gruntjs/grunt-contrib-nodeunit#readme
+Rules-Requires-Root: no
+
+Package: node-grunt-contrib-nodeunit
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , nodeunit
+Description: Grunt plugin to run Nodeunit unit tests
+ Grunt automates several tasks related to maintaining a JavaScript library
+ or framework. It can be used for JS code minification, unit testing, code
+ checking, and several other tasks.
+ .
+ This plugin runs Nodeunit unit tests.
+ .
+ Node.js is an event-based server-side JavaScript engine.

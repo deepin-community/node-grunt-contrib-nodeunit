@@ -1,0 +1,16 @@
+Description: Ensure the error will be expanded on multiple lines by making its contents larger.
+ An unidentified change in Node.js 12.18 introduced this regression in the tests.
+Bug-Debian: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=963061
+Author: Olivier Tilloy <olivier.tilloy@canonical.com>
+
+--- a/test/fixtures/fail.js
++++ b/test/fixtures/fail.js
+@@ -9,7 +9,7 @@ exports.fail = {
+     var error = new Error('Something arbitrary');
+     // Must be long enough that the inspect calls try to
+     // wrap the line for indentation.
+-    error.actual = { foo: 'bar', something: 'complex', more: 'more', even: 11335577992 };
++    error.actual = { foo: 'bar baz', something: 'complex', more: 'more', even: 11335577992 };
+     error.expected = "No you didn't";
+     error.showDiff = true;
+     throw(error);

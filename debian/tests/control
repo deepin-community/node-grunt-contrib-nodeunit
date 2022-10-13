@@ -1,0 +1,14 @@
+Test-Command: /usr/share/pkg-js-autopkgtest/runner require
+Depends: @, nodejs, pkg-js-autopkgtest
+Restrictions: superficial
+Features: test-name=pkg-js-autopkgtest-require
+
+Test-Command: /usr/share/pkg-js-autopkgtest/runner
+Depends: @, @builddeps@, pkg-js-autopkgtest
+ , nodeunit
+ , grunt
+ , node-grunt-contrib-clean
+ , node-grunt-contrib-internal
+ , node-tap
+Restrictions: allow-stderr, skippable
+Features: test-name=pkg-js-autopkgtest

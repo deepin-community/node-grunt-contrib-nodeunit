@@ -1,0 +1,5 @@
+disable-jshint.patch
+use-global-tasks.patch
+replace-nodeunit-x-by-nodeunit.patch
+test-expectation-ensure-linewrap.patch
+fix-test.diff
