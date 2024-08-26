@@ -5,7 +5,7 @@ Last-Update: 2020-11-13
 
 --- a/test/nodeunit_test.js
 +++ b/test/nodeunit_test.js
-@@ -61,6 +61,7 @@
+@@ -60,6 +60,7 @@
        test.done();
      });
    },
@@ -13,11 +13,11 @@ Last-Update: 2020-11-13
    junit: function(test) {
      test.expect(5);
      grunt.util.spawn({
-@@ -81,6 +82,7 @@
+@@ -80,6 +81,7 @@
        test.done();
      });
    },
 +  */
    minimal_fail: function(test) {
-     test.expect(2);
+     test.expect(3);
      grunt.util.spawn({

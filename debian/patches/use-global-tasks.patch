@@ -1,9 +1,7 @@
 Description: Use global tasks
-Index: node-grunt-contrib-nodeunit/Gruntfile.js
-===================================================================
---- node-grunt-contrib-nodeunit.orig/Gruntfile.js
-+++ node-grunt-contrib-nodeunit/Gruntfile.js
-@@ -40,8 +40,8 @@ module.exports = function(grunt) {
+--- a/Gruntfile.js
++++ b/Gruntfile.js
+@@ -40,8 +40,8 @@
  
    // These plugins provide necessary tasks.
   // grunt.loadNpmTasks('grunt-contrib-jshint');

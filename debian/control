@@ -4,9 +4,9 @@ Uploaders: Pirate Praveen <praveen@debian.org>
 Section: javascript
 Priority: optional
 Build-Depends:
- debhelper-compat (= 13),
+ debhelper-compat (= 13)
  , dh-sequence-nodejs
-Standards-Version: 4.6.0
+Standards-Version: 4.6.1
 Vcs-Browser: https://salsa.debian.org/js-team/node-grunt-contrib-nodeunit
 Vcs-Git: https://salsa.debian.org/js-team/node-grunt-contrib-nodeunit.git
 Homepage: https://github.com/gruntjs/grunt-contrib-nodeunit#readme

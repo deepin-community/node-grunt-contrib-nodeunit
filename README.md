@@ -1,4 +1,4 @@
-# grunt-contrib-nodeunit v2.0.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-nodeunit.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-nodeunit) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/8526qwiyaavbfbxh/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-contrib-nodeunit/branch/master)
+# grunt-contrib-nodeunit v4.0.0 [![Build Status](https://github.com/gruntjs/grunt-contrib-nodeunit/workflows/Tests/badge.svg)](https://github.com/gruntjs/grunt-contrib-nodeunit/actions?workflow=Tests)
 
 > Run Nodeunit unit tests
 
@@ -6,7 +6,7 @@
 
 ## Getting Started
 
-If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
+If you haven't used [Grunt](https://gruntjs.com/) before, be sure to check out the [Getting Started](https://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](https://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
 ```shell
 npm install grunt-contrib-nodeunit --save-dev
@@ -125,6 +125,9 @@ grunt.initConfig({
 
 ## Release History
 
+ * 2021-10-05   v4.0.0   Requires node.js v12 Updated to latest nodeunit and dependency packages.
+ * 2021-03-25   v3.0.0   Updated to latest nodeunit and security packages.
+ * 2020-02-10   v2.1.0   Updates to latest node.js supported versions. Updated to latest nodeunit and security packages.
  * 2018-05-19   v2.0.0   Updates to latest node.js supported versions. Updated to latest nodeunit. Updates to dependencies for security reasons.
  * 2016-03-04   v1.0.0   Fixed unit test to run on Node.js v4.x and v5.x. Point main to task and remove peerDep. Doc updates.
  * 2014-06-21   v0.4.1   Fixes Windows JUnit issue. Check `error.stack` exists.
@@ -143,4 +146,4 @@ grunt.initConfig({
 
 Task submitted by ["Cowboy" Ben Alman](http://benalman.com)
 
-*This file was generated on Sat May 19 2018 15:46:13.*
+*This file was generated on Tue Oct 05 2021 22:15:36.*
