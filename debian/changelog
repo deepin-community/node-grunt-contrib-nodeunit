@@ -1,3 +1,26 @@
+node-grunt-contrib-nodeunit (4.0.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Enable __proto__ in test, needed here for pkg-js-autopkgtest 0.15
+
+ -- Yadd <yadd@debian.org>  Mon, 12 Sep 2022 11:50:19 +0200
+
+node-grunt-contrib-nodeunit (4.0.0-1) unstable; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.6.1
+  * New upstream version 4.0.0
+  * Refresh patches
+
+ -- Yadd <yadd@debian.org>  Tue, 30 Aug 2022 18:12:15 +0200
+
+node-grunt-contrib-nodeunit (2.0.0-6) unstable; urgency=medium
+
+  * Team upload
+  * Fix d/control for Debian::Control (Closes: #1006062)
+
+ -- Yadd <yadd@debian.org>  Sat, 19 Feb 2022 08:56:30 +0100
+
 node-grunt-contrib-nodeunit (2.0.0-5) unstable; urgency=medium
 
   * Team upload

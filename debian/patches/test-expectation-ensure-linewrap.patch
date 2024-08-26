@@ -5,7 +5,7 @@ Author: Olivier Tilloy <olivier.tilloy@canonical.com>
 
 --- a/test/fixtures/fail.js
 +++ b/test/fixtures/fail.js
-@@ -9,7 +9,7 @@ exports.fail = {
+@@ -9,7 +9,7 @@
      var error = new Error('Something arbitrary');
      // Must be long enough that the inspect calls try to
      // wrap the line for indentation.

@@ -1,7 +1,7 @@
 Description: replace nodeunit-x by nodeunit
-Author: Xavier Guimard <yadd@debian.org>
+Author: Yadd <yadd@debian.org>
 Forwarded: not-needed
-Last-Update: 2020-01-26
+Last-Update: 2022-08-30
 
 --- a/package.json
 +++ b/package.json
@@ -9,11 +9,11 @@ Last-Update: 2020-01-26
      "test": "grunt test && grunt jshint"
    },
    "dependencies": {
--    "nodeunit-x": "^0.12.1"
+-    "nodeunit-x": "^0.15.0"
 +    "nodeunit": "^0.12.1"
    },
    "devDependencies": {
-     "grunt": "^1.0.1",
+     "grunt": "^1.4.1",
 --- a/tasks/nodeunit.js
 +++ b/tasks/nodeunit.js
 @@ -16,7 +16,7 @@
@@ -49,23 +49,3 @@ Last-Update: 2020-01-26
      }
  
      if (fs.existsSync(nodeUnitDefaultsFile)) {
---- a/test/nodeunit_test.js
-+++ b/test/nodeunit_test.js
-@@ -82,7 +82,7 @@
-     });
-   },
-   minimal_fail: function(test) {
--    test.expect(3);
-+    test.expect(2);
-     grunt.util.spawn({
-       grunt: true,
-       args: ['test-minimal:fail', '--no-color']
-@@ -94,7 +94,7 @@
-       var outFile = path.join('tmp', 'fail.js.out');
-       var contents = grunt.util.normalizelf(grunt.file.read(outFile));
- 
--      test.ok(contents.indexOf('undefinedundefined') === -1, 'No `undefined`s in output from lack of nodeunit.json defaults');
-+      //test.ok(contents.indexOf('undefinedundefined') === -1, 'No `undefined`s in output from lack of nodeunit.json defaults');
-       test.ok(contents.indexOf('2/2 assertions failed') !== -1, 'Two assertions');
- 
-       test.done();

@@ -1,9 +1,7 @@
 Description: Disable jshint
-Index: node-grunt-contrib-nodeunit/Gruntfile.js
-===================================================================
---- node-grunt-contrib-nodeunit.orig/Gruntfile.js
-+++ node-grunt-contrib-nodeunit/Gruntfile.js
-@@ -39,7 +39,7 @@ module.exports = function(grunt) {
+--- a/Gruntfile.js
++++ b/Gruntfile.js
+@@ -39,7 +39,7 @@
    grunt.loadTasks('tasks');
  
    // These plugins provide necessary tasks.
@@ -12,7 +10,7 @@ Index: node-grunt-contrib-nodeunit/Gruntfile.js
    grunt.loadNpmTasks('grunt-contrib-clean');
    grunt.loadNpmTasks('grunt-contrib-internal');
  
-@@ -115,5 +115,5 @@ module.exports = function(grunt) {
+@@ -115,5 +115,5 @@
    });
  
    // By default, lint and run all tests.
